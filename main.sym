@@ -1,0 +1,154 @@
+004-005 @READ_PROGRAM_MEMORY8.P1
+004     @WRITE_PROGRAM_MEMORY8.P2
+015     CCP_1_LOW
+015-016 CCP_1
+016     CCP_1_HIGH
+01B-01C CCP_2
+01B     CCP_2_LOW
+01C     CCP_2_HIGH
+020     digit10
+021     digit2t
+022     digit11
+023     digit12
+024     digit13
+025-026 value
+027-028 xadc
+029     digitd1
+02A     digitd2
+02B     digit0
+02C     digit1
+02D     digitep
+02E     digitwp
+02F     digitsp
+030     digitnp
+031     digite0
+032     digitw0
+033     digits0
+034     digitn0
+035     digite1
+036     digite2
+037     digitw1
+038     digitw2
+039     digitn1
+03A     digitn2
+03B     digits1
+03C     digits2
+03D-03E digit1lcd
+03F-040 digit2lcd
+041-042 digit3lcd
+043-044 digit4lcd
+045-046 digit5lcd
+047-05A line10
+05B-06E line20
+06F     @TRIS_C
+070-071 @DIV1616.P1
+070     @DIV88.P2
+070     @MUL88.P3
+070     delaysecond.@SCRATCH1
+070     delay6.@SCRATCH1
+071     @MUL88.P1
+071     @DIV88.P2
+071     @delay_ms1.P3
+072-073 @DIV1616.P1
+072     @DIV88.@SCRATCH1
+074     @DIV1616.@SCRATCH1
+077     @SCRATCH
+078     @SCRATCH
+078     _RETURN_
+079     @SCRATCH
+07A     @SCRATCH
+07B     @SCRATCH
+107.6   C1OUT
+108.6   C2OUT
+10D-10E @READ_PROGRAM_MEMORY8.P1
+10D-10E @WRITE_PROGRAM_MEMORY8.P2
+
+ROM Allocation:
+01AB  @delay_ms1
+0004  lin1
+0019  lin2
+002E  lin3
+0043  lin4
+01C4  delaylcd
+0249  delay1lcd
+01C0  delay
+033E  delaysecond
+0346  delay1
+0503  delay3
+0634  delay4
+071B  delay6
+0507  wreprom
+0692  wreprom1
+0069  readeeprom
+0058  offall
+04CE  onx1
+04DC  onx2
+04E8  onx3
+04F6  onx4
+01C8  writelcd
+02D8  lcdreset
+024D  wrlcdcom4
+0296  wrlcddata4
+0322  resetlcd
+0258  selectdis
+02A1  line1
+02BC  line2
+059E  line1ram
+0603  line2ram
+055B  ramline1
+05C5  ramline2
+02D7  startloop
+04CC  motor
+0370  adce
+034B  @DIV1616
+015B  @DIV88
+0170  @MUL88
+03BA  adcw
+0404  adcn
+044E  adcs
+0498  adcall
+049F  datacal
+0535  incriment
+054E  decriment
+0195  devide
+0526  keysense
+062A  delayloop
+064E  homeposition
+0723  MAIN
+0723  @cinit
+02A9  upperline
+02C4  line1line
+05A6  line1line20
+060B  upperline1
+07CD  TK1
+
+Project Directory:
+    C:\Users\kcon\Desktop\solartrackmaharshi\
+
+Project Files:
+    main.c
+    main.h
+    ..\..\..\..\Program Files\PICC\devices\16F887.h
+    ..\..\..\..\Program Files\PICC\drivers\math.h
+
+Units:
+    main.c (main)
+
+Compiler Settings:
+    Processor:      PIC16F887
+    Pointer Size:   16
+    ADC Range:      0-1023
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+
+Output Files:
+    Errors:      main.err
+    Ext Symbols: main.esym
+    INHX8:       main.hex
+    Symbols:     main.sym
+    List:        main.lst
+    Debug/COFF:  main.cof
+    Project:     main.PJT
+    Call Tree:   main.tre
+    Statistics:  main.sta
